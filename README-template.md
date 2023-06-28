@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Nasadmi/AgeCalculatorMainChallenge)
+- Live Site URL: [Add live site URL here](https://stunning-begonia-caab31.netlify.app/)
 
 ## My process
 
@@ -114,5 +114,5 @@ setTimeout(() => {
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Add your name here](https://github.com/Nasadmi)
 - Frontend Mentor - [@Nasadmi](https://www.frontendmentor.io/profile/Nasadmi)
