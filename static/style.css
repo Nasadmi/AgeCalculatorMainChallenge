@@ -155,7 +155,7 @@ main.response article h1 span {
   color: var(--primary-purple-color);
 }
 
-@media (max-width: 375px) {
+@media (min-width: 869px) {
   .container {
     width: 50%;
     padding: 30px;
@@ -186,5 +186,68 @@ main.response article h1 span {
 
   main.response article h1 {
     font-size: 4em;
+  }
+}
+
+@media (min-width: 869px) {
+  .container {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .mid-element {
+    justify-content: right;
+    align-items: end;
+    margin-top: 5px;
+  }
+
+  .mid-element > button#btn-svg-icon:hover {
+    background-color: var(--secondary-off_black-color);
+  }
+
+  .mid-element > button#btn-svg-icon::before {
+    transform: translateX(-300px) scaleX(8);
+  }
+
+  header.data > label.content-data {
+    margin: 0 15px;
+  }
+
+  .header.data > label.content-data > .data-input {
+    padding: 20px;
+    width: 200px;
+  }
+
+  main.response article h1 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 869px) {
+  .container {
+    width: 55%;
+    margin: auto;
+  }
+
+  header.data > label.content-data {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 725px) {
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+
+  header.data > label.content-data {
+    margin: 0 5px;
   }
 }
