@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="data">
+        <label for="day" class="content-data">
+          <h3 id="day-label-title">DAY</h3>
+          <input
+            type="text"
+            name="day"
+            id="day"
+            class="data-input"
+            placeholder="DD"
+          />
+          <br />
+          <span class="alerts" id="alert-day"></span>
+        </label>
+        <label for="month" class="content-data">
+          <h3 id="month-label-title">MONTH</h3>
+          <input
+            type="text"
+            name="month"
+            id="month"
+            class="data-input"
+            placeholder="MM"
+          />
+          <br />
+          <span class="alerts" id="alert-month"></span>
+        </label>
+        <label for="year" class="content-data">
+          <h3 id="year-label-title">YEAR</h3>
+          <input
+            type="text"
+            name="year"
+            id="year"
+            class="data-input"
+            placeholder="YYYY"
+          />
+          <br />
+          <span class="alerts" id="alert-year"></span>
+        </label>
+      </header>
+      <div class="mid-element">
+        <button id="btn-svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44" id="icon">
+            <g>
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <main class="response">
+        <section>
+          <article>
+            <h1>
+              <span id="year-response"> - - </span>
+              years
+            </h1>
+          </article>
+
+          <article>
+            <h1>
+              <span id="month-response"> - - </span>
+              months
+            </h1>
+          </article>
+
+          <article>
+            <h1>
+              <span id="day-response"> - - </span>
+              days
+            </h1>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="static/js/main.js" type="module"></script>
+  </body>
+</html>
