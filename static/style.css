@@ -155,7 +155,7 @@ main.response article h1 span {
   color: var(--primary-purple-color);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 869px) {
   .container {
     width: 50%;
     padding: 30px;
