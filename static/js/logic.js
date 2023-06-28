@@ -59,6 +59,9 @@ function Calculate({ year, month, day }) {
   if (Math.sign(calc_day) === -1) {
     calc_day = -(currentDay - day);
   }
+  if (Math.sign(calc_year) === -1) {
+    calc_year = 0;
+  }
   Elements.span_day.innerHTML = `${calc_day}`;
   Elements.span_month.innerHTML = `${calc_month}`;
   Elements.span_year.innerHTML = `${calc_year}`;
