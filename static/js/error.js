@@ -37,14 +37,6 @@ function Errors(type) {
     StyleError(true);
     return;
   }
-
-  if (type === "future") {
-    Elements.alert_day.innerHTML = `${errors.future}`;
-    Elements.alert_month.innerHTML = `${errors.future}`;
-    Elements.alert_year.innerHTML = `${errors.future}`;
-    StyleError(true);
-    return;
-  }
 }
 
 /**
