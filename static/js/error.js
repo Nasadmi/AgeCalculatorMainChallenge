@@ -12,7 +12,7 @@ function Errors(type) {
     Elements.alert_day.innerHTML = `${errors.empity}`;
     Elements.alert_month.innerHTML = `${errors.empity}`;
     Elements.alert_year.innerHTML = `${errors.empity}`;
-    StyleError(true, Elements);
+    StyleError(true);
     return;
   }
 
@@ -20,13 +20,13 @@ function Errors(type) {
     Elements.alert_day.innerHTML = `${errors.invalid} day`;
     Elements.alert_month.innerHTML = `${errors.invalid} month`;
     Elements.alert_year.innerHTML = `${errors.invalid} in past`;
-    StyleError(true, Elements);
+    StyleError(true);
     return;
   }
 
   if (type === "whole") {
     Elements.alert_day.innerHTML = `${errors.whole}`;
-    StyleError(true, Elements);
+    StyleError(true);
     return;
   }
 
@@ -34,7 +34,15 @@ function Errors(type) {
     Elements.alert_day.innerHTML = `${errors.number}`;
     Elements.alert_month.innerHTML = `${errors.number}`;
     Elements.alert_year.innerHTML = `${errors.number}`;
-    StyleError(true, Elements);
+    StyleError(true);
+    return;
+  }
+
+  if (type === "future") {
+    Elements.alert_day.innerHTML = `${errors.future}`;
+    Elements.alert_month.innerHTML = `${errors.future}`;
+    Elements.alert_year.innerHTML = `${errors.future}`;
+    StyleError(true);
     return;
   }
 }
