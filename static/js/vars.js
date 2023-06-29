@@ -22,6 +22,7 @@ const errors = {
   invalid: "Must be valid",
   whole: "Must be valid date",
   number: "You can only enter numbers",
+  future: "This person is not born",
 };
 
 // Date constants

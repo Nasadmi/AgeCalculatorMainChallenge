@@ -1,6 +1,12 @@
 import { StyleError, NumberAnimation } from "./styles.js";
 import { Errors, isNumberGreaterThanCurrentMonth } from "./error.js";
-import { Elements, currentYear, date } from "./vars.js";
+import {
+  Elements,
+  currentDay,
+  currentMonth,
+  currentYear,
+  date,
+} from "./vars.js";
 import { Calculate, StringToNumber } from "./logic.js";
 
 const btn = document.getElementById("btn-svg-icon");
@@ -31,6 +37,13 @@ function Main() {
   }
   if (data_day < 0 || data_month < 0 || data_year < 0) {
     return Errors("invalid");
+  }
+  if (
+    data_month > currentMonth ||
+    data_day > currentDay ||
+    (data_month > currentMonth && data_day > currentDay)
+  ) {
+    return Errors("future");
   }
   if (!isNumberGreaterThanCurrentMonth(data_day, date, currentYear)) {
     return Errors("whole");
