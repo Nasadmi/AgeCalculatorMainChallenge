@@ -37,6 +37,12 @@ function Errors(type) {
     StyleError(true);
     return;
   }
+
+  if (type === "future") {
+    Elements.alert_day.innerHTML = `${errors.future}`;
+    StyleError(true);
+    return;
+  }
 }
 
 /**
