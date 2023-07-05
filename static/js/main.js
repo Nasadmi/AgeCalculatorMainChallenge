@@ -40,8 +40,8 @@ function Main() {
     return Errors("invalid");
   }
   if (
-    (date_client.getFullYear() === currentYear &&
-      (data_day > currentDay || data_month > currentMonth)) ||
+    date_client.getFullYear() === currentYear &&
+      (data_day > currentDay || data_month > currentMonth) ||
     (data_day > currentDay && data_month > currentMonth)
   ) {
     return Errors("future");
