@@ -1,17 +1,6 @@
-import { StyleError, NumberAnimation } from "./styles.js";
-import { Errors, isNumberGreaterThanCurrentMonth } from "./error.js";
-import {
-  Elements,
-  currentDay,
-  currentMonth,
-  currentYear,
-  date,
-} from "./vars.js";
-import { Calculate, StringToNumber } from "./logic.js";
-
 const btn = document.getElementById("btn-svg-icon");
 
-let intervals;
+let interval;
 
 function Main() {
   let data_day = Elements.input_day.value;
@@ -51,11 +40,11 @@ function Main() {
   }
   // Clear styles in case there is no error
   StyleError(false);
-  intervals = NumberAnimation();
+  interval = NumberAnimation();
   // Timer before the animation end
   setTimeout(() => {
-    clearInterval(intervals);
-    intervals = null;
+    clearInterval(interval);
+    interval = null;
     Calculate({ year: data_year, month: data_month, day: data_day });
   }, 1000);
 }

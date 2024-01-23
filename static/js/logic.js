@@ -1,5 +1,3 @@
-import { Elements, currentDay, currentMonth, currentYear } from "./vars.js";
-
 /**
  * @description Transforms the parameter text into numbers and also checks if it can be passed to prevent NaN errors
  * @param {string} str1 Text
@@ -66,5 +64,3 @@ function Calculate({ year, month, day }) {
   Elements.span_month.innerHTML = `${calc_month}`;
   Elements.span_year.innerHTML = `${calc_year}`;
 }
-
-export { StringToNumber, Calculate };

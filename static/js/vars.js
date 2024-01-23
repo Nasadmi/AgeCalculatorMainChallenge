@@ -34,5 +34,3 @@ const currentDay = date.getDate();
 const currentMonth = date.getMonth() + 1;
 
 const currentYear = date.getFullYear();
-
-export { Elements, errors, currentDay, date, currentMonth, currentYear };

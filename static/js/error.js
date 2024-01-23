@@ -1,6 +1,3 @@
-import { StyleError } from "./styles.js";
-import { Elements, currentYear, date, errors } from "./vars.js";
-
 /**
  * @description Function in charge of executing code in case of error through the type that is passed to it
  * @param {string} type Error types defined in the errors library of vars.js
@@ -59,5 +56,3 @@ function isNumberGreaterThanCurrentMonth(number) {
     return true;
   }
 }
-
-export { isNumberGreaterThanCurrentMonth, Errors };

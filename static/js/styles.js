@@ -1,5 +1,3 @@
-import { Elements } from "./vars.js";
-
 /**
  * @description Function in charge of activating the styles in case there is an error
  * @param {boolean} boolean Boolean to jump or not errors (true: yes, false: no)
@@ -66,5 +64,3 @@ function NumberAnimation() {
     }, 80);
   }
 }
-
-export { StyleError, NumberAnimation };
