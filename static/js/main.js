@@ -28,13 +28,10 @@ function Main() {
   if (data_day < 0 || data_month < 0 || data_year < 0) {
     return Errors("invalid");
   }
-  if (
-    date_client.getFullYear() === currentYear &&
-      (data_day > currentDay || data_month > currentMonth) ||
-    (data_day > currentDay && data_month > currentMonth)
-  ) {
+  if (date_client.getFullYear() === currentYear && ((data_day > currentDay || data_month > currentMonth) || (data_day > currentDay && data_month > currentMonth))) {
     return Errors("future");
   }
+  
   if (!isNumberGreaterThanCurrentMonth(data_day, date, currentYear)) {
     return Errors("whole");
   }
